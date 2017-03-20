@@ -34,12 +34,14 @@ similar to donor.dat this is a genotype that is only viable on glucose. We use t
 Finally, in the folder "EXAMPLES", I have provided two fully commented C++ codes that you can run as follows:
 
 ## Example 1: MCMC Sampling of parental genotypes with genotypic distance=300
+### sampling_phenotypedist_metropolis.cpp
 This program samples from the vast genotype space a pair of genotypes with the same phenotype and a given genotypic distance.
 The inputs of the program are 
 1) The universe of the reactions "./DATA/universe-gcs.net"
-2) The initial donor genotype "./DATA/recipient.dat"
+2) The initial donor genotype "./DATA/donor.dat"
 3) The initial recipient genotype "./DATA/recipient.dat"
-4) Tll the environment files "./ENVS/*.flx"
+4) All the environment files "./ENVS/*.flx"
+5) delta: is the desired genotypic distance between the sampled genotype pair.
 
 and the output of the program is "./donor_recipient.dat", which includes the genotype of vector of the finally sampled pair of donor-recipient genotypes with the specified genotypic distance.
 
@@ -47,3 +49,17 @@ You can run the code as follows:
 sampling_phenotypedist_metropolis  ./DATA/universe-gcs.net ./DATA/donor.dat ./DATA/recipient.dat ./donor_recipient.dat --delta 300 ./ENVS/*.flx
 
 ## example 2: Recombination between parental genotypes to create 100 recombinant metabolic networks
+### recombination_genomescale_phen_dist.cpp
+This program simulates recombination in metabolic networks.
+Starting from a pair of genotypes with a given genotypic distance (as created by the program described in example 1), this program creates a given number of recombinant genotypes by adding a given number of randomly selected reactions from the donor genotype to the recipient one, and deleting a given number of randomly selected genotypes from the recipient genotype.
+
+The inputs of the program are:
+1) The universe of the reactions "./DATA/universe-gcs.net"
+2) The donor-recipient genotype pair "./DATA/donor_recipient.dat" as created by the program described in example1
+3) All the environment files "./ENVS/.flx"
+4) num1: number of reactions present in the recipient (or donor) genotype
+5) num2: number of reactions that is present in the donor genotype, but absent in the recipient genotype (i.e. half of the genotypic distance).
+6) num3: number of reactions that are transferred from the donor genotype to the recipient one.
+
+You can run the code as follows:
+recombination_genomescale_phen_dist ./DATA/universe-gcs.net ./DATA/donor_recipient.dat --outnet ./recombinants.dat  --num1 2079 --num2 150 --num3 5  --iter 100 ./ENVS/*.flx
