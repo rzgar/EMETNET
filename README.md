@@ -40,7 +40,9 @@ The inputs of the program are
 2) The initial donor genotype "./DATA/recipient.dat"
 3) The initial recipient genotype "./DATA/recipient.dat"
 4) Tll the environment files "./ENVS/*.flx"
+
 and the output of the program is "./donor_recipient.dat", which includes the genotype of vector of the finally sampled pair of donor-recipient genotypes with the specified genotypic distance.
+
 You can run the code as follows:
 sampling_phenotypedist_metropolis  ./DATA/universe-gcs.net ./DATA/donor.dat ./DATA/recipient.dat ./donor_recipient.dat --delta 300 ./ENVS/*.flx
 
