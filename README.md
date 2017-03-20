@@ -36,5 +36,12 @@ Finally, in the folder "EXAMPLES", I have provided two fully commented C++ codes
 ## Example 1: MCMC Sampling of parental genotypes with genotypic distance=300
 This program samples from the vast genotype space a pair of genotypes with the same phenotype and a given genotypic distance.
 The inputs of the program are 
+1) The universe of the reactions "./DATA/universe-gcs.net"
+2) The initial donor genotype "./DATA/recipient.dat"
+3) The initial recipient genotype "./DATA/recipient.dat"
+4) Tll the environment files "./ENVS/*.flx"
+and the output of the program is "./donor_recipient.dat", which includes the genotype of vector of the finally sampled pair of donor-recipient genotypes with the specified genotypic distance.
+You can run the code as follows:
 sampling_phenotypedist_metropolis  ./DATA/universe-gcs.net ./DATA/donor.dat ./DATA/recipient.dat ./donor_recipient.dat --delta 300 ./ENVS/*.flx
+
 ## example 2: Recombination between parental genotypes to create 100 recombinant metabolic networks
