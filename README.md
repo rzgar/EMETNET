@@ -14,12 +14,14 @@ cd emetnet_install_files/
 
 ## The organization of the codes and the data
 In the "emetnet_install_files/emetnet" folder you can find part of the C++ codes that I wrote in the first stages of my PhD. The results of these analyses are published in the following two papers:
-1.
-2.
+1. Hosseini SR, Barve A, Wagner A. Exhaustive Analysis of a Genotype Space Comprising 10 15 Central Carbon Metabolisms Reveals an Organization Conducive to Metabolic Innovation; 2015; PLOS Computational biology
+2. Hosseini SR, Martin OC, Wagner A. Phenotypic innovation through recombination in genome-scale metabolic networks; 2016; Proceedings of the Royal Society B.
+
 Please note that most of the functions in erandomwalk class were previously written by a former PhD student in our lab (Joao Rodriguez). Furthermore, he also made his own library (emetnet_install_files/eutils) for this project. 
 
 In the "DATA" folder, you can find the following 3 files:
 1. universe-gcs.net
+
 2. donor.dat
 3. recipient.dat
 
