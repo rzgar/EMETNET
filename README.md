@@ -30,8 +30,9 @@ This is a text file including 6588 lines each of which represents a given reacti
 This is an example of a donor genotype, which is exclusively viable on glucose. This file includes a binary vector of length 6588 each elemts of which corresponds to a reaction in the universe, and it is 1 if the reaction exists in the donor genotype and 0 otherwise.
 3. recipient.dat
 similar to donor.dat this is a genotype that is only viable on glucose. We use these files in our following two examples.
-### EXAMPLE
-Finally, in the folder "EXAMPLE", I have provided two fully commented C++ codes that you can run as follows:
+### EXAMPLES
+Finally, in the folder "EXAMPLES", I have provided two fully commented C++ codes that you can run as follows:
 
 ## Example 1: MCMC Sampling of parental genotypes with genotypic distance=300
+
 ## example 2: Recombination between parental genotypes to create 100 recombinant metabolic networks
