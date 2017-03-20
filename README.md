@@ -43,7 +43,7 @@ The inputs of the program are
 4) All the environment files "./ENVS/*.flx"
 5) delta: is the desired genotypic distance between the sampled genotype pair.
 
-and the output of the program is "./donor_recipient.dat", which includes the genotype of vector of the finally sampled pair of donor-recipient genotypes with the specified genotypic distance.
+and the output of the program is a dat file (e.g. "./donor_recipient.dat"), which includes the genotype of vector of the finally sampled pair of donor-recipient genotypes with the specified genotypic distance.
 
 You can run the code as follows:
 sampling_phenotypedist_metropolis  ./DATA/universe-gcs.net ./DATA/donor.dat ./DATA/recipient.dat ./donor_recipient.dat --delta 300 ./ENVS/*.flx
@@ -61,5 +61,8 @@ The inputs of the program are:
 5) num2: number of reactions that is present in the donor genotype, but absent in the recipient genotype (i.e. half of the genotypic distance).
 6) num3: number of reactions that are transferred from the donor genotype to the recipient one.
 
+and the outputs of the program are:
+1) a dat file (e.g. "./recombinants.dat", which includes the information about the number loss of viablity on carbon sources and the number of gain of viability on the new carbon sources.
+2) a dat_phen file (e.g. ./recombinants.dat_phen, which includes the phenotype of each of the recombinant genotypes.
 You can run the code as follows:
 recombination_genomescale_phen_dist ./DATA/universe-gcs.net ./DATA/donor_recipient.dat --outnet ./recombinants.dat  --num1 2079 --num2 150 --num3 5  --iter 100 ./ENVS/*.flx
