@@ -34,5 +34,7 @@ similar to donor.dat this is a genotype that is only viable on glucose. We use t
 Finally, in the folder "EXAMPLES", I have provided two fully commented C++ codes that you can run as follows:
 
 ## Example 1: MCMC Sampling of parental genotypes with genotypic distance=300
-
+This program samples from the vast genotype space a pair of genotypes with the same phenotype and a given genotypic distance.
+The inputs of the program are 
+sampling_phenotypedist_metropolis  ./DATA/universe-gcs.net ./DATA/donor.dat ./DATA/recipient.dat ./donor_recipient.dat --delta 300 ./ENVS/*.flx
 ## example 2: Recombination between parental genotypes to create 100 recombinant metabolic networks
