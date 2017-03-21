@@ -11,6 +11,7 @@ tar zxf emetnet_install_files.tar.gz
 cd emetnet_install_files/
 5. Run the installation script as follows:
 ./install_emetnet.sh
+
 Note: If you get installation error, you can try the new install_emetnet.sh file below:
 https://github.com/rzgar/EMETNET/blob/master/install_emetnet.sh
 
