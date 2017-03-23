@@ -12,9 +12,6 @@ cd emetnet_install_files/
 5. Run the installation script as follows:
 ./install_emetnet.sh
 
-Note: If you get installation error, you can try the new install_emetnet.sh file below:
-https://github.com/rzgar/EMETNET/blob/master/install_emetnet.sh
-
 ## The organization of the codes and the data
 ### emetnet_install_files/emetnet
 In the "emetnet_install_files/emetnet" folder you can find part of the C++ codes that I wrote in the first stages of my PhD. The results of these analyses are published in the following two papers:
