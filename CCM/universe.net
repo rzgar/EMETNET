@@ -1,0 +1,72 @@
+Biomass: (1.496) 3pg + (3.7478) accoa + (59.8100) atp + (0.3610) e4p + (0.0709) f6p + (0.1290) g3p + (0.2050) g6p + (0.2557) gln-L + (4.9414) glu-L + (59.8100) h2o + (3.5470) nad + (13.0279) nadph + (1.7867) oaa + (0.5191) pep + (2.8328) pyr + (0.8977) r5p --> (59.8100) adp + (4.1182) akg + (3.7478) coa + (59.8100) h + (3.5470) nadh + (13.0279) nadp + (59.8100) pi
+GLNS: atp + glu-L + nh4 --> adp + gln-L + h + pi
+PGM: 2pg <==> 3pg
+PGK: 3pg + atp <==> 13dpg + adp
+GAPD: g3p + nad + pi <==> 13dpg + h + nadh
+ENO: 2pg <==> h2o + pep
+RPI: r5p <==> ru5p-D
+NH4t: nh4[e] <==> nh4
+PIt2r: h[e] + pi[e] <==> h + pi
+SUCCt2_2: (2) h[e] + succ[e] --> (2) h + succ
+ACALDt: acald[e] <==> acald
+SUCCt3: h[e] + succ --> h + succ[e]
+H2Ot: h2o[e] <==> h2o
+GLUt2r: glu-L[e] + h[e] <==> glu-L + h
+GLNabc: atp + gln-L[e] + h2o --> adp + gln-L + h + pi
+GLCpts: glc-D[e] + pep --> g6p + pyr
+FRUpts2: fru[e] + pep --> f6p + pyr
+FUMt2_2: fum[e] + (2) h[e] --> fum + (2) h
+CO2t: co2[e] <==> co2
+D_LACt2: h[e] + lac-D[e] <==> h + lac-D
+ACt2r: ac[e] + h[e] <==> ac + h
+O2t: o2[e] <==> o2
+AKGt2r: akg[e] + h[e] <==> akg + h
+FORt2: for[e] + h[e] --> for + h
+FORti: for --> for[e]
+MALt2_2: (2) h[e] + mal-L[e] --> (2) h + mal-L
+PYRt2r: h[e] + pyr[e] <==> h + pyr
+ICL: icit --> glx + succ
+PPCK: atp + oaa --> adp + co2 + pep
+PPC: co2 + h2o + pep --> h + oaa + pi
+MALS: accoa + glx + h2o --> coa + h + mal-L
+ME1: mal-L + nad --> co2 + nadh + pyr
+ME2: mal-L + nadp --> co2 + nadph + pyr
+MDH: mal-L + nad <==> h + nadh + oaa
+ICDHyr: icit + nadp <==> akg + co2 + nadph
+CS: accoa + h2o + oaa --> cit + coa + h
+FUM: fum + h2o <==> mal-L
+ACONT:  cit <==> icit
+SUCOAS: atp + coa + succ <==> adp + pi + succoa
+AKGDH: akg + coa + nad --> co2 + nadh + succoa
+GLUDy: glu-L + h2o + nadp <==> akg + h + nadph + nh4
+GLUSy: akg + gln-L + h + nadph --> (2) glu-L + nadp
+GLUN: gln-L + h2o --> glu-L + nh4
+PPS: atp + h2o + pyr --> amp + (2) h + pep + pi
+PYK: adp + h + pep --> atp + pyr
+TPI: dhap <==> g3p
+PDH: coa + nad + pyr --> accoa + co2 + nadh
+PFK: atp + f6p --> adp + fdp + h
+PGI: g6p <==> f6p
+FBA: fdp <==> dhap + g3p
+FBP: fdp + h2o --> f6p + pi
+CYTBD,nottransport: (2) h + (0.5) o2 + q8h2 --> (2) h[e] + h2o + q8
+ATPS4r,nottransport: adp + (4) h[e] + pi <==> atp + (3) h + h2o
+ATPM: atp + h2o --> adp + h + pi
+NADTRHD: nad + nadph --> nadh + nadp
+ADK1: amp + atp <==> (2) adp
+NADH16,nottransport: (4) h + nadh + q8 --> (3) h[e] + nad + q8h2
+THD2,nottransport: (2) h[e] + nadh + nadp --> (2) h + nad + nadph
+SUCDi: q8 + succ --> fum + q8h2
+FRD7: fum + q8h2 --> q8 + succ
+PGL: 6pgl + h2o --> 6pgc + h
+G6PDH2r: g6p + nadp <==> 6pgl + h + nadph
+TKT1: r5p + xu5p-D <==> g3p + s7p
+TKT2: e4p + xu5p-D <==> f6p + g3p
+TALA: g3p + s7p <==> e4p + f6p
+RPE: ru5p-D <==> xu5p-D
+GND: 6pgc + nadp --> co2 + nadph + ru5p-D
+ACALD: acald + coa + nad <==> accoa + h + nadh
+ACKr: ac + atp <==> actp + adp
+PTAr: accoa + pi <==> actp + coa
+LDH_D: lac-D + nad <==> h + nadh + pyr
+PFL: coa + pyr --> accoa + for
